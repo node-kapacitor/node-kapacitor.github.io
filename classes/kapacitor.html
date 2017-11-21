@@ -139,7 +139,7 @@ kapacitor.getTasks().then(<span class="hljs-function"><span class="hljs-params">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L143">lib/kapacitor.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L143">lib/kapacitor.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -213,7 +213,7 @@ kapacitor.getTasks().then(<span class="hljs-function"><span class="hljs-params">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L269">lib/kapacitor.ts:269</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L269">lib/kapacitor.ts:269</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -259,7 +259,7 @@ kapacitor.createTask({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L334">lib/kapacitor.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L334">lib/kapacitor.ts:334</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,12 +267,14 @@ kapacitor.createTask({
 									<p>Creates a new template.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>no template exists</p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="lang-typescript">
 kapacitor.createTemplate({
-  id: <span class="hljs-string">'test_kapa'</span>,
+  id: <span class="hljs-string">'test_template'</span>,
   <span class="hljs-keyword">type</span>: <span class="hljs-string">'stream'</span>,
-  dbrps: [{ db: <span class="hljs-string">'test'</span>, rp: <span class="hljs-string">'autogen'</span> }],
   script: <span class="hljs-string">`
     // Which measurement to consume
     var measurement string
@@ -337,7 +339,7 @@ kapacitor.createTemplate({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L577">lib/kapacitor.ts:577</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L579">lib/kapacitor.ts:579</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -378,7 +380,7 @@ kapacitor.getConfig(<span class="hljs-string">'influxdb'</span>, <span class="hl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L455">lib/kapacitor.ts:455</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L456">lib/kapacitor.ts:456</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -387,6 +389,9 @@ kapacitor.getConfig(<span class="hljs-string">'influxdb'</span>, <span class="hl
 									returns the results in a friendly format, <a href="../interfaces/itask.html">ITask</a>.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="requesterror.html">RequestError</a></p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="lang-typescript">
 kapacitor.getTask(taskId, {dotView: <span class="hljs-string">'labels'</span>}).then(<span class="hljs-function"><span class="hljs-params">results</span> =&gt;</span> {
@@ -423,7 +428,7 @@ kapacitor.getTask(taskId, {dotView: <span class="hljs-string">'labels'</span>}).
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L503">lib/kapacitor.ts:503</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L505">lib/kapacitor.ts:505</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +467,7 @@ kapacitor.getTasks({dotView: <span class="hljs-string">'labels'</span>}).then(<s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L480">lib/kapacitor.ts:480</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L482">lib/kapacitor.ts:482</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -471,6 +476,9 @@ kapacitor.getTasks({dotView: <span class="hljs-string">'labels'</span>}).then(<s
 									returns the results in a friendly format, <a href="../interfaces/itemplate.html">ITemplate</a>.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="requesterror.html">RequestError</a></p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="lang-typescript">
 kapacitor.getTemplate(tmplId, {scriptFormat: <span class="hljs-string">'raw'</span>}).then(<span class="hljs-function"><span class="hljs-params">results</span> =&gt;</span> {
@@ -507,7 +515,7 @@ kapacitor.getTemplate(tmplId, {scriptFormat: <span class="hljs-string">'raw'</sp
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L529">lib/kapacitor.ts:529</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L531">lib/kapacitor.ts:531</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -546,7 +554,7 @@ kapacitor.getTemplates({dotView: <span class="hljs-string">'labels'</span>}).the
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L244">lib/kapacitor.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L244">lib/kapacitor.ts:244</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -592,7 +600,7 @@ kapacitor.ping(<span class="hljs-number">5000</span>).then(<span class="hljs-fun
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L415">lib/kapacitor.ts:415</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L415">lib/kapacitor.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -627,7 +635,7 @@ kapacitor.removeTask(<span class="hljs-string">'test_kapa'</span>);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L433">lib/kapacitor.ts:433</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L433">lib/kapacitor.ts:433</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -662,7 +670,7 @@ kapacitor.removeTemplate(<span class="hljs-string">'test_template'</span>);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L557">lib/kapacitor.ts:557</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L559">lib/kapacitor.ts:559</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -707,7 +715,7 @@ kapacitor.updateConfig({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L359">lib/kapacitor.ts:359</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L359">lib/kapacitor.ts:359</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -745,7 +753,7 @@ kapacitor.updateTask({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/4abfa2f/src/lib/kapacitor.ts#L391">lib/kapacitor.ts:391</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L391">lib/kapacitor.ts:391</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -857,7 +865,13 @@ kapacitor.updateTemplate({
 						<a href="pool.html" class="tsd-kind-icon">Pool</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="requesterror.html" class="tsd-kind-icon">Request<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="resulterror.html" class="tsd-kind-icon">Result<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="servicenotavailableerror.html" class="tsd-kind-icon">Service<wbr>Not<wbr>Available<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/configupdateaction.html" class="tsd-kind-icon">Config<wbr>Update<wbr>Action</a>

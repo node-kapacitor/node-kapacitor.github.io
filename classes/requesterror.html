@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ExponentialBackoff | node-kapacitor</title>
+	<title>RequestError | node-kapacitor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="exponentialbackoff.html">ExponentialBackoff</a>
+					<a href="requesterror.html">RequestError</a>
 				</li>
 			</ul>
-			<h1>Class ExponentialBackoff</h1>
+			<h1>Class RequestError</h1>
 		</div>
 	</div>
 </header>
@@ -66,27 +66,23 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>class</dt>
-						<dd></dd>
-						<dt>implements</dt>
-						<dd><p>{IBackoffStrategy}</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>An RequestError is returned as an error from requests that
+						result in a 300 &lt;= error code &lt;= 500.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ExponentialBackoff</span>
+						<span class="tsd-signature-type">Error</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">RequestError</span>
+							</li>
+						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/ibackoffstrategy.html" class="tsd-signature-type">IBackoffStrategy</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,21 +92,26 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="exponentialbackoff.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="requesterror.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="exponentialbackoff.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="requesterror.html#req" class="tsd-kind-icon">req</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="requesterror.html#res" class="tsd-kind-icon">res</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="requesterror.html#statuscode" class="tsd-kind-icon">status<wbr>Code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="requesterror.html#statusmessage" class="tsd-kind-icon">status<wbr>Message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="requesterror.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="requesterror.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="requesterror.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static"><a href="requesterror.html#stack" class="tsd-kind-icon">stack</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="exponentialbackoff.html#getdelay" class="tsd-kind-icon">get<wbr>Delay</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="exponentialbackoff.html#next" class="tsd-kind-icon">next</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="exponentialbackoff.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="requesterror.html#create" class="tsd-kind-icon">Create</a></li>
 							</ul>
 						</section>
 					</div>
@@ -122,126 +123,165 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Exponential<wbr>Backoff<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/iexponentialoptions.html" class="tsd-signature-type">IExponentialOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="exponentialbackoff.html" class="tsd-signature-type">ExponentialBackoff</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Request<wbr>Error<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClientRequest</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="requesterror.html" class="tsd-signature-type">RequestError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/backoff/exponential.ts#L39">lib/backoff/exponential.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/results.ts#L41">lib/results.ts:41</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new exponential backoff strategy.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>see</dt>
-									<dd><p><a href="https://en.wikipedia.org/wiki/Exponential_backoff">https://en.wikipedia.org/wiki/Exponential_backoff</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/iexponentialoptions.html" class="tsd-signature-type">IExponentialOptions</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-										</div>
-									</div>
+									<h5>req: <span class="tsd-signature-type">ClientRequest</span></h5>
+								</li>
+								<li>
+									<h5>res: <span class="tsd-signature-type">IncomingMessage</span></h5>
+								</li>
+								<li>
+									<h5>body: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="exponentialbackoff.html" class="tsd-signature-type">ExponentialBackoff</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="requesterror.html" class="tsd-signature-type">RequestError</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iexponentialoptions.html" class="tsd-signature-type">IExponentialOptions</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="req" class="tsd-anchor"></a>
+					<h3>req</h3>
+					<div class="tsd-signature tsd-kind-icon">req<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClientRequest</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/backoff/exponential.ts#L46">lib/backoff/exponential.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/results.ts#L43">lib/results.ts:43</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="res" class="tsd-anchor"></a>
+					<h3>res</h3>
+					<div class="tsd-signature tsd-kind-icon">res<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IncomingMessage</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/results.ts#L43">lib/results.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="statuscode" class="tsd-anchor"></a>
+					<h3>status<wbr>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">status<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/results.ts#L30">lib/results.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="statusmessage" class="tsd-anchor"></a>
+					<h3>status<wbr>Message</h3>
+					<div class="tsd-signature tsd-kind-icon">status<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/results.ts#L31">lib/results.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="error" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ErrorConstructor</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in /Users/syakuryuki/pro/node-kapacitor/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:884</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="message" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Error.message</p>
+						<ul>
+							<li>Defined in /Users/syakuryuki/pro/node-kapacitor/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:874</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Error.name</p>
+						<ul>
+							<li>Defined in /Users/syakuryuki/pro/node-kapacitor/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:873</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+					<a name="stack" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
+					<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Error.stack</p>
+						<p>Overrides Error.stack</p>
+						<ul>
+							<li>Defined in /Users/syakuryuki/pro/node-kapacitor/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:875</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getdelay" class="tsd-anchor"></a>
-					<h3>get<wbr>Delay</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Delay<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="create" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Create</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">Create<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClientRequest</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ibackoffstrategy.html">IBackoffStrategy</a>.<a href="../interfaces/ibackoffstrategy.html#getdelay">getDelay</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/backoff/exponential.ts#L53">lib/backoff/exponential.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/results.ts#L33">lib/results.ts:33</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>getDelay returns the amount of delay of the current backoff.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="next" class="tsd-anchor"></a>
-					<h3>next</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ibackoffstrategy.html" class="tsd-signature-type">IBackoffStrategy</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ibackoffstrategy.html">IBackoffStrategy</a>.<a href="../interfaces/ibackoffstrategy.html#next">next</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/backoff/exponential.ts#L61">lib/backoff/exponential.ts:61</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Next is called when a failure occurs on a host to
-									return the next backoff amount.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ibackoffstrategy.html" class="tsd-signature-type">IBackoffStrategy</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="reset" class="tsd-anchor"></a>
-					<h3>reset</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ibackoffstrategy.html" class="tsd-signature-type">IBackoffStrategy</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ibackoffstrategy.html">IBackoffStrategy</a>.<a href="../interfaces/ibackoffstrategy.html#reset">reset</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/backoff/exponential.ts#L70">lib/backoff/exponential.ts:70</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a strategy with a reset backoff counter.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ibackoffstrategy.html" class="tsd-signature-type">IBackoffStrategy</a></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <span class="tsd-signature-type">ClientRequest</span></h5>
+								</li>
+								<li>
+									<h5>res: <span class="tsd-signature-type">IncomingMessage</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="requesterror.html" class="tsd-signature-type">RequestError</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>e: <a href="requesterror.html" class="tsd-signature-type">RequestError</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -263,30 +303,9 @@
 					<li class=" tsd-kind-enum">
 						<a href="../enums/templatefields.html" class="tsd-kind-icon">Template<wbr>Fields</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class">
+					<li class=" tsd-kind-class">
 						<a href="exponentialbackoff.html" class="tsd-kind-icon">Exponential<wbr>Backoff</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="exponentialbackoff.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="exponentialbackoff.html#options" class="tsd-kind-icon">options</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="exponentialbackoff.html#getdelay" class="tsd-kind-icon">get<wbr>Delay</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="exponentialbackoff.html#next" class="tsd-kind-icon">next</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="exponentialbackoff.html#reset" class="tsd-kind-icon">reset</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="host.html" class="tsd-kind-icon">Host</a>
 					</li>
@@ -296,9 +315,45 @@
 					<li class=" tsd-kind-class">
 						<a href="pool.html" class="tsd-kind-icon">Pool</a>
 					</li>
-					<li class=" tsd-kind-class">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
 						<a href="requesterror.html" class="tsd-kind-icon">Request<wbr>Error</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="requesterror.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="requesterror.html#req" class="tsd-kind-icon">req</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="requesterror.html#res" class="tsd-kind-icon">res</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="requesterror.html#statuscode" class="tsd-kind-icon">status<wbr>Code</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="requesterror.html#statusmessage" class="tsd-kind-icon">status<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="requesterror.html#error" class="tsd-kind-icon">Error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="requesterror.html#message" class="tsd-kind-icon">message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="requesterror.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+								<a href="requesterror.html#stack" class="tsd-kind-icon">stack</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="requesterror.html#create" class="tsd-kind-icon">Create</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="resulterror.html" class="tsd-kind-icon">Result<wbr>Error</a>
 					</li>
