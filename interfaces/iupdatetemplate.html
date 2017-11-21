@@ -68,7 +68,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="itask.html" class="tsd-signature-type">ITask</a>
+						<a href="itemplate.html" class="tsd-signature-type">ITemplate</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">IUpdateTemplate</span>
@@ -85,18 +85,12 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#created" class="tsd-kind-icon">created</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#dbrps" class="tsd-kind-icon">dbrps</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#dot" class="tsd-kind-icon">dot</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#executing" class="tsd-kind-icon">executing</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="iupdatetemplate.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#lastenabled" class="tsd-kind-icon">last<wbr>Enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#link" class="tsd-kind-icon">link</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#modified" class="tsd-kind-icon">modified</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#script" class="tsd-kind-icon">script</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#stats" class="tsd-kind-icon">stats</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#status" class="tsd-kind-icon">status</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#templateid" class="tsd-kind-icon">template<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#type" class="tsd-kind-icon">type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iupdatetemplate.html#vars" class="tsd-kind-icon">vars</a></li>
 							</ul>
@@ -111,30 +105,14 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> created</h3>
 					<div class="tsd-signature tsd-kind-icon">created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#created">created</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#created">created</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L255">lib/grammar/ds.ts:255</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L167">lib/grammar/ds.ts:167</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Date the task was first created.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="dbrps" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> dbrps</h3>
-					<div class="tsd-signature tsd-kind-icon">dbrps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#dbrps">dbrps</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L220">lib/grammar/ds.ts:220</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>List of database retention policy pairs the task is allowed to access.</p>
+							<p>Date the template was first created.</p>
 						</div>
 					</div>
 				</section>
@@ -143,9 +121,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> dot</h3>
 					<div class="tsd-signature tsd-kind-icon">dot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#dot">dot</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#dot">dot</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L245">lib/grammar/ds.ts:245</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L157">lib/grammar/ds.ts:157</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -162,9 +140,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error</h3>
 					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#error">error</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#error">error</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L250">lib/grammar/ds.ts:250</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L162">lib/grammar/ds.ts:162</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -173,57 +151,25 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="executing" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> executing</h3>
-					<div class="tsd-signature tsd-kind-icon">executing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#executing">executing</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L265">lib/grammar/ds.ts:265</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether the task is currently executing.</p>
-						</div>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="itask.html">ITask</a>.<a href="itask.html#id">id</a></p>
+						<p>Overrides <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L176">lib/grammar/ds.ts:176</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L176">lib/grammar/ds.ts:176</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="lastenabled" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> last<wbr>Enabled</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#lastenabled">lastEnabled</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L275">lib/grammar/ds.ts:275</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Date the task was last set to status enabled.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="link" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> link</h3>
 					<div class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#link">link</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#link">link</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L186">lib/grammar/ds.ts:186</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L126">lib/grammar/ds.ts:126</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -244,14 +190,14 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> modified</h3>
 					<div class="tsd-signature tsd-kind-icon">modified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#modified">modified</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#modified">modified</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L260">lib/grammar/ds.ts:260</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L172">lib/grammar/ds.ts:172</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Date the task was last modified.</p>
+							<p>Date the template was last modified.</p>
 						</div>
 					</div>
 				</section>
@@ -260,9 +206,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> script</h3>
 					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#script">script</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#script">script</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L210">lib/grammar/ds.ts:210</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L144">lib/grammar/ds.ts:144</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -272,67 +218,18 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="stats" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stats</h3>
-					<div class="tsd-signature tsd-kind-icon">stats<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#stats">stats</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L270">lib/grammar/ds.ts:270</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Map of statistics about a task.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="status" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> status</h3>
-					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"enabled"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"disabled"</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#status">status</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L237">lib/grammar/ds.ts:237</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>One of <code>enabled</code> or <code>disabled</code>.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="templateid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> template<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">template<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#templateid">templateId</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L200">lib/grammar/ds.ts:200</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An optional ID of a template to use instead of specifying a TICKscript
-							and type directly.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="type" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"stream"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"batch"</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#type">type</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L205">lib/grammar/ds.ts:205</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L139">lib/grammar/ds.ts:139</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The task type: <code>stream</code> or <code>batch</code>.</p>
+							<p>The template type: <code>stream</code> or <code>batch</code>.</p>
 						</div>
 					</div>
 				</section>
@@ -341,9 +238,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> vars</h3>
 					<div class="tsd-signature tsd-kind-icon">vars<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="itask.html">ITask</a>.<a href="itask.html#vars">vars</a></p>
+						<p>Inherited from <a href="itemplate.html">ITemplate</a>.<a href="itemplate.html#vars">vars</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/1b46eee/src/lib/grammar/ds.ts#L215">lib/grammar/ds.ts:215</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/0463a7e/src/lib/grammar/ds.ts#L149">lib/grammar/ds.ts:149</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -459,22 +356,13 @@
 								<a href="iupdatetemplate.html#created" class="tsd-kind-icon">created</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iupdatetemplate.html#dbrps" class="tsd-kind-icon">dbrps</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="iupdatetemplate.html#dot" class="tsd-kind-icon">dot</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="iupdatetemplate.html#error" class="tsd-kind-icon">error</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iupdatetemplate.html#executing" class="tsd-kind-icon">executing</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 								<a href="iupdatetemplate.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iupdatetemplate.html#lastenabled" class="tsd-kind-icon">last<wbr>Enabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="iupdatetemplate.html#link" class="tsd-kind-icon">link</a>
@@ -484,15 +372,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="iupdatetemplate.html#script" class="tsd-kind-icon">script</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iupdatetemplate.html#stats" class="tsd-kind-icon">stats</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iupdatetemplate.html#status" class="tsd-kind-icon">status</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iupdatetemplate.html#templateid" class="tsd-kind-icon">template<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="iupdatetemplate.html#type" class="tsd-kind-icon">type</a>
