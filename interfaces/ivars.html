@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPoolOptions | node-kapacitor</title>
+	<title>IVars | node-kapacitor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,89 +54,39 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ipooloptions.html">IPoolOptions</a>
+					<a href="ivars.html">IVars</a>
 				</li>
 			</ul>
-			<h1>Interface IPoolOptions</h1>
+			<h1>Interface IVars</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A set of vars for overwriting any defined vars in the TICKscript.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPoolOptions</span>
+						<span class="target">IVars</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipooloptions.html#backoff" class="tsd-kind-icon">backoff</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipooloptions.html#maxretries" class="tsd-kind-icon">max<wbr>Retries</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipooloptions.html#requesttimeout" class="tsd-kind-icon">request<wbr>Timeout</a></li>
-							</ul>
-						</section>
+			<section class="tsd-panel tsd-kind-interface">
+				<h3 class="tsd-before-signature">Indexable</h3>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>Attr: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="ivar.html" class="tsd-signature-type">IVar</a></div>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A set of vars for overwriting any defined vars in the TICKscript.</p>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="backoff" class="tsd-anchor"></a>
-					<h3>backoff</h3>
-					<div class="tsd-signature tsd-kind-icon">backoff<span class="tsd-signature-symbol">:</span> <a href="ibackoffstrategy.html" class="tsd-signature-type">IBackoffStrategy</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/pool.ts#L42">lib/pool.ts:42</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Options to configure the backoff policy for the pool. Defaults
-							to using exponential backoff.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="maxretries" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Retries</h3>
-					<div class="tsd-signature tsd-kind-icon">max<wbr>Retries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/pool.ts#L30">lib/pool.ts:30</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Number of times we should retry running a query
-							before calling back with an error.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="requesttimeout" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> request<wbr>Timeout</h3>
-					<div class="tsd-signature tsd-kind-icon">request<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/pool.ts#L36">lib/pool.ts:36</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The length of time after which HTTP requests will error
-							if they do not receive a response.</p>
-						</div>
-					</div>
-				</section>
+				</div>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -203,24 +153,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="ipingstats.html" class="tsd-kind-icon">IPing<wbr>Stats</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="ipooloptions.html" class="tsd-kind-icon">IPool<wbr>Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipooloptions.html#backoff" class="tsd-kind-icon">backoff</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipooloptions.html#maxretries" class="tsd-kind-icon">max<wbr>Retries</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipooloptions.html#requesttimeout" class="tsd-kind-icon">request<wbr>Timeout</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="ipoolrequestoptions.html" class="tsd-kind-icon">IPool<wbr>Request<wbr>Options</a>
 					</li>
@@ -257,9 +192,13 @@
 					<li class=" tsd-kind-interface">
 						<a href="ivar.html" class="tsd-kind-icon">IVar</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="ivars.html" class="tsd-kind-icon">IVars</a>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#assertnoerrors" class="tsd-kind-icon">assert<wbr>NoErrors</a>
 					</li>

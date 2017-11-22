@@ -139,7 +139,7 @@ kapacitor.getTasks().then(<span class="hljs-function"><span class="hljs-params">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L143">lib/kapacitor.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L143">lib/kapacitor.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -213,7 +213,7 @@ kapacitor.getTasks().then(<span class="hljs-function"><span class="hljs-params">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L269">lib/kapacitor.ts:269</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L269">lib/kapacitor.ts:269</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,7 +231,7 @@ kapacitor.createTask({
   vars: {
     var1: {
       value: <span class="hljs-number">42</span>,
-      <span class="hljs-keyword">type</span>: <span class="hljs-string">'float'</span>
+      <span class="hljs-keyword">type</span>: VarType.Float
     }
   }
 });
@@ -259,7 +259,7 @@ kapacitor.createTask({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L334">lib/kapacitor.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L334">lib/kapacitor.ts:334</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -311,7 +311,7 @@ kapacitor.createTemplate({
   vars: {
     var1: {
       value: <span class="hljs-number">42</span>,
-      <span class="hljs-keyword">type</span>: <span class="hljs-string">'float'</span>
+      <span class="hljs-keyword">type</span>: VarType.Float
     }
   }
 });
@@ -339,7 +339,7 @@ kapacitor.createTemplate({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L579">lib/kapacitor.ts:579</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L587">lib/kapacitor.ts:587</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,7 +380,7 @@ kapacitor.getConfig(<span class="hljs-string">'influxdb'</span>, <span class="hl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L456">lib/kapacitor.ts:456</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L460">lib/kapacitor.ts:460</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -391,6 +391,22 @@ kapacitor.getConfig(<span class="hljs-string">'influxdb'</span>, <span class="hl
 								<dl class="tsd-comment-tags">
 									<dt>throws</dt>
 									<dd><p><a href="requesterror.html">RequestError</a></p>
+										<table>
+											<thead>
+												<tr>
+													<th>statusCode</th>
+													<th>statusMessage</th>
+													<th>message</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>404</td>
+													<td>Not Found</td>
+													<td>no task exists</td>
+												</tr>
+											</tbody>
+										</table>
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="lang-typescript">
@@ -428,7 +444,7 @@ kapacitor.getTask(taskId, {dotView: <span class="hljs-string">'labels'</span>}).
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L505">lib/kapacitor.ts:505</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L513">lib/kapacitor.ts:513</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -467,7 +483,7 @@ kapacitor.getTasks({dotView: <span class="hljs-string">'labels'</span>}).then(<s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L482">lib/kapacitor.ts:482</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L490">lib/kapacitor.ts:490</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -478,6 +494,22 @@ kapacitor.getTasks({dotView: <span class="hljs-string">'labels'</span>}).then(<s
 								<dl class="tsd-comment-tags">
 									<dt>throws</dt>
 									<dd><p><a href="requesterror.html">RequestError</a></p>
+										<table>
+											<thead>
+												<tr>
+													<th>statusCode</th>
+													<th>statusMessage</th>
+													<th>message</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>404</td>
+													<td>Not Found</td>
+													<td>no template exists</td>
+												</tr>
+											</tbody>
+										</table>
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="lang-typescript">
@@ -515,7 +547,7 @@ kapacitor.getTemplate(tmplId, {scriptFormat: <span class="hljs-string">'raw'</sp
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L531">lib/kapacitor.ts:531</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L539">lib/kapacitor.ts:539</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -554,7 +586,7 @@ kapacitor.getTemplates({dotView: <span class="hljs-string">'labels'</span>}).the
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L244">lib/kapacitor.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L244">lib/kapacitor.ts:244</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -600,7 +632,7 @@ kapacitor.ping(<span class="hljs-number">5000</span>).then(<span class="hljs-fun
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L415">lib/kapacitor.ts:415</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L415">lib/kapacitor.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -635,7 +667,7 @@ kapacitor.removeTask(<span class="hljs-string">'test_kapa'</span>);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L433">lib/kapacitor.ts:433</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L433">lib/kapacitor.ts:433</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -670,7 +702,7 @@ kapacitor.removeTemplate(<span class="hljs-string">'test_template'</span>);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L559">lib/kapacitor.ts:559</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L567">lib/kapacitor.ts:567</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -715,7 +747,7 @@ kapacitor.updateConfig({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L359">lib/kapacitor.ts:359</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L359">lib/kapacitor.ts:359</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -753,7 +785,7 @@ kapacitor.updateTask({
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/kapacitor.ts#L391">lib/kapacitor.ts:391</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/kapacitor.ts#L391">lib/kapacitor.ts:391</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -768,7 +800,7 @@ kapacitor.updateTemplate({
   vars: {
     var1: {
       value: <span class="hljs-number">42</span>,
-      <span class="hljs-keyword">type</span>: <span class="hljs-string">'float'</span>
+      <span class="hljs-keyword">type</span>: VarType.Float
     }
   }
 });
@@ -803,6 +835,9 @@ kapacitor.updateTemplate({
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="../enums/templatefields.html" class="tsd-kind-icon">Template<wbr>Fields</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/vartype.html" class="tsd-kind-icon">Var<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="exponentialbackoff.html" class="tsd-kind-icon">Exponential<wbr>Backoff</a>
@@ -932,6 +967,12 @@ kapacitor.updateTemplate({
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iupdatetemplate.html" class="tsd-kind-icon">IUpdate<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ivar.html" class="tsd-kind-icon">IVar</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ivars.html" class="tsd-kind-icon">IVars</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#assertnoerrors" class="tsd-kind-icon">assert<wbr>NoErrors</a>

@@ -99,10 +99,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="fields" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fields</h3>
-					<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <a href="../enums/taskfields.html" class="tsd-signature-type">TaskFields</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <a href="../enums/templatefields.html" class="tsd-signature-type">TemplateFields</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/grammar/ds.ts#L310">lib/grammar/ds.ts:310</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L396">lib/grammar/ds.ts:396</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -118,13 +118,18 @@
 					<div class="tsd-signature tsd-kind-icon">limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/grammar/ds.ts#L320">lib/grammar/ds.ts:320</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L408">lib/grammar/ds.ts:408</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Maximum number of tasks to return.</p>
+							<p>Maximum number of templates to return.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>100</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -133,13 +138,18 @@
 					<div class="tsd-signature tsd-kind-icon">offset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/grammar/ds.ts#L315">lib/grammar/ds.ts:315</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L402">lib/grammar/ds.ts:402</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Offset count for paginating through tasks.</p>
+							<p>Offset count for paginating through templates.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -148,14 +158,14 @@
 					<div class="tsd-signature tsd-kind-icon">pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/grammar/ds.ts#L304">lib/grammar/ds.ts:304</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L390">lib/grammar/ds.ts:390</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Filter results based on the pattern.
 								Uses standard shell glob matching,
-							see this@see <a href="https://golang.org/pkg/path/filepath/#Match">https://golang.org/pkg/path/filepath/#Match</a> for more details.</p>
+							see <a href="https://golang.org/pkg/path/filepath/#Match">this</a> for more details.</p>
 						</div>
 					</div>
 				</section>
@@ -166,7 +176,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="itemplateoptions.html">ITemplateOptions</a>.<a href="itemplateoptions.html#scriptformat">scriptFormat</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/24a1190/src/lib/grammar/ds.ts#L295">lib/grammar/ds.ts:295</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L381">lib/grammar/ds.ts:381</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,6 +184,11 @@
 							<p>One of formatted or raw. Raw will return the script identical to
 							how it was defined. Formatted will first format the script.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>formatted</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -193,6 +208,9 @@
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="../enums/templatefields.html" class="tsd-kind-icon">Template<wbr>Fields</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/vartype.html" class="tsd-kind-icon">Var<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/exponentialbackoff.html" class="tsd-kind-icon">Exponential<wbr>Backoff</a>
@@ -295,6 +313,12 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="iupdatetemplate.html" class="tsd-kind-icon">IUpdate<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ivar.html" class="tsd-kind-icon">IVar</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ivars.html" class="tsd-kind-icon">IVars</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#assertnoerrors" class="tsd-kind-icon">assert<wbr>NoErrors</a>

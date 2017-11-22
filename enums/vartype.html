@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPoolOptions | node-kapacitor</title>
+	<title>VarType | node-kapacitor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,88 +54,135 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ipooloptions.html">IPoolOptions</a>
+					<a href="vartype.html">VarType</a>
 				</li>
 			</ul>
-			<h1>Interface IPoolOptions</h1>
+			<h1>Enumeration VarType</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">IPoolOptions</span>
-					</li>
-				</ul>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>VarType is an enumeration of TICKscript var types.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipooloptions.html#backoff" class="tsd-kind-icon">backoff</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipooloptions.html#maxretries" class="tsd-kind-icon">max<wbr>Retries</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipooloptions.html#requesttimeout" class="tsd-kind-icon">request<wbr>Timeout</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#bool" class="tsd-kind-icon">Bool</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#duration" class="tsd-kind-icon">Duration</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#float" class="tsd-kind-icon">Float</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#int" class="tsd-kind-icon">Int</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#lambda" class="tsd-kind-icon">Lambda</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#list" class="tsd-kind-icon">List</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#regex" class="tsd-kind-icon">Regex</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#star" class="tsd-kind-icon">Star</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="vartype.html#string" class="tsd-kind-icon">String</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="backoff" class="tsd-anchor"></a>
-					<h3>backoff</h3>
-					<div class="tsd-signature tsd-kind-icon">backoff<span class="tsd-signature-symbol">:</span> <a href="ibackoffstrategy.html" class="tsd-signature-type">IBackoffStrategy</a></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="bool" class="tsd-anchor"></a>
+					<h3>Bool</h3>
+					<div class="tsd-signature tsd-kind-icon">Bool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;bool&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/pool.ts#L42">lib/pool.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L5">lib/grammar/ds.ts:5</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Options to configure the backoff policy for the pool. Defaults
-							to using exponential backoff.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="maxretries" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Retries</h3>
-					<div class="tsd-signature tsd-kind-icon">max<wbr>Retries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="duration" class="tsd-anchor"></a>
+					<h3>Duration</h3>
+					<div class="tsd-signature tsd-kind-icon">Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;duration&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/pool.ts#L30">lib/pool.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L10">lib/grammar/ds.ts:10</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Number of times we should retry running a query
-							before calling back with an error.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="requesttimeout" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> request<wbr>Timeout</h3>
-					<div class="tsd-signature tsd-kind-icon">request<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="float" class="tsd-anchor"></a>
+					<h3>Float</h3>
+					<div class="tsd-signature tsd-kind-icon">Float<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;float&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/pool.ts#L36">lib/pool.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L7">lib/grammar/ds.ts:7</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The length of time after which HTTP requests will error
-							if they do not receive a response.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="int" class="tsd-anchor"></a>
+					<h3>Int</h3>
+					<div class="tsd-signature tsd-kind-icon">Int<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;int&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L6">lib/grammar/ds.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="lambda" class="tsd-anchor"></a>
+					<h3>Lambda</h3>
+					<div class="tsd-signature tsd-kind-icon">Lambda<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;lambda&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L11">lib/grammar/ds.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="list" class="tsd-anchor"></a>
+					<h3>List</h3>
+					<div class="tsd-signature tsd-kind-icon">List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;list&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L12">lib/grammar/ds.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="regex" class="tsd-anchor"></a>
+					<h3>Regex</h3>
+					<div class="tsd-signature tsd-kind-icon">Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;regex&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L9">lib/grammar/ds.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="star" class="tsd-anchor"></a>
+					<h3>Star</h3>
+					<div class="tsd-signature tsd-kind-icon">Star<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;star&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L13">lib/grammar/ds.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="string" class="tsd-anchor"></a>
+					<h3>String</h3>
+					<div class="tsd-signature tsd-kind-icon">String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;string&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/9b93aad/src/lib/grammar/ds.ts#L8">lib/grammar/ds.ts:8</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -150,14 +197,47 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="../enums/taskfields.html" class="tsd-kind-icon">Task<wbr>Fields</a>
+						<a href="taskfields.html" class="tsd-kind-icon">Task<wbr>Fields</a>
 					</li>
 					<li class=" tsd-kind-enum">
-						<a href="../enums/templatefields.html" class="tsd-kind-icon">Template<wbr>Fields</a>
+						<a href="templatefields.html" class="tsd-kind-icon">Template<wbr>Fields</a>
 					</li>
-					<li class=" tsd-kind-enum">
-						<a href="../enums/vartype.html" class="tsd-kind-icon">Var<wbr>Type</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-enum">
+						<a href="vartype.html" class="tsd-kind-icon">Var<wbr>Type</a>
+						<ul>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#bool" class="tsd-kind-icon">Bool</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#duration" class="tsd-kind-icon">Duration</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#float" class="tsd-kind-icon">Float</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#int" class="tsd-kind-icon">Int</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#lambda" class="tsd-kind-icon">Lambda</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#list" class="tsd-kind-icon">List</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#regex" class="tsd-kind-icon">Regex</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#star" class="tsd-kind-icon">Star</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="vartype.html#string" class="tsd-kind-icon">String</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="../classes/exponentialbackoff.html" class="tsd-kind-icon">Exponential<wbr>Backoff</a>
 					</li>
@@ -180,85 +260,70 @@
 						<a href="../classes/servicenotavailableerror.html" class="tsd-kind-icon">Service<wbr>Not<wbr>Available<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="configupdateaction.html" class="tsd-kind-icon">Config<wbr>Update<wbr>Action</a>
+						<a href="../interfaces/configupdateaction.html" class="tsd-kind-icon">Config<wbr>Update<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ibackoffstrategy.html" class="tsd-kind-icon">IBackoff<wbr>Strategy</a>
+						<a href="../interfaces/ibackoffstrategy.html" class="tsd-kind-icon">IBackoff<wbr>Strategy</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iclusterconfig.html" class="tsd-kind-icon">ICluster<wbr>Config</a>
+						<a href="../interfaces/iclusterconfig.html" class="tsd-kind-icon">ICluster<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iexponentialoptions.html" class="tsd-kind-icon">IExponential<wbr>Options</a>
+						<a href="../interfaces/iexponentialoptions.html" class="tsd-kind-icon">IExponential<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ihostconfig.html" class="tsd-kind-icon">IHost<wbr>Config</a>
+						<a href="../interfaces/ihostconfig.html" class="tsd-kind-icon">IHost<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ilisttasksoptions.html" class="tsd-kind-icon">IList<wbr>Tasks<wbr>Options</a>
+						<a href="../interfaces/ilisttasksoptions.html" class="tsd-kind-icon">IList<wbr>Tasks<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ilisttemplatesoptions.html" class="tsd-kind-icon">IList<wbr>Templates<wbr>Options</a>
+						<a href="../interfaces/ilisttemplatesoptions.html" class="tsd-kind-icon">IList<wbr>Templates<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ipingstats.html" class="tsd-kind-icon">IPing<wbr>Stats</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="ipooloptions.html" class="tsd-kind-icon">IPool<wbr>Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipooloptions.html#backoff" class="tsd-kind-icon">backoff</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipooloptions.html#maxretries" class="tsd-kind-icon">max<wbr>Retries</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipooloptions.html#requesttimeout" class="tsd-kind-icon">request<wbr>Timeout</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="ipoolrequestoptions.html" class="tsd-kind-icon">IPool<wbr>Request<wbr>Options</a>
+						<a href="../interfaces/ipingstats.html" class="tsd-kind-icon">IPing<wbr>Stats</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iresponse.html" class="tsd-kind-icon">IResponse</a>
+						<a href="../interfaces/ipooloptions.html" class="tsd-kind-icon">IPool<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="isinglehostconfig.html" class="tsd-kind-icon">ISingle<wbr>Host<wbr>Config</a>
+						<a href="../interfaces/ipoolrequestoptions.html" class="tsd-kind-icon">IPool<wbr>Request<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="itask.html" class="tsd-kind-icon">ITask</a>
+						<a href="../interfaces/iresponse.html" class="tsd-kind-icon">IResponse</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="itaskoptions.html" class="tsd-kind-icon">ITask<wbr>Options</a>
+						<a href="../interfaces/isinglehostconfig.html" class="tsd-kind-icon">ISingle<wbr>Host<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="itasks.html" class="tsd-kind-icon">ITasks</a>
+						<a href="../interfaces/itask.html" class="tsd-kind-icon">ITask</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="itemplate.html" class="tsd-kind-icon">ITemplate</a>
+						<a href="../interfaces/itaskoptions.html" class="tsd-kind-icon">ITask<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="itemplateoptions.html" class="tsd-kind-icon">ITemplate<wbr>Options</a>
+						<a href="../interfaces/itasks.html" class="tsd-kind-icon">ITasks</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="itemplates.html" class="tsd-kind-icon">ITemplates</a>
+						<a href="../interfaces/itemplate.html" class="tsd-kind-icon">ITemplate</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iupdatetask.html" class="tsd-kind-icon">IUpdate<wbr>Task</a>
+						<a href="../interfaces/itemplateoptions.html" class="tsd-kind-icon">ITemplate<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iupdatetemplate.html" class="tsd-kind-icon">IUpdate<wbr>Template</a>
+						<a href="../interfaces/itemplates.html" class="tsd-kind-icon">ITemplates</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ivar.html" class="tsd-kind-icon">IVar</a>
+						<a href="../interfaces/iupdatetask.html" class="tsd-kind-icon">IUpdate<wbr>Task</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ivars.html" class="tsd-kind-icon">IVars</a>
+						<a href="../interfaces/iupdatetemplate.html" class="tsd-kind-icon">IUpdate<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ivar.html" class="tsd-kind-icon">IVar</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ivars.html" class="tsd-kind-icon">IVars</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#assertnoerrors" class="tsd-kind-icon">assert<wbr>NoErrors</a>
