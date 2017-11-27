@@ -91,8 +91,12 @@
 								<li class="tsd-kind-interface"><a href="interfaces/configupdateaction.html" class="tsd-kind-icon">Config<wbr>Update<wbr>Action</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ibackoffstrategy.html" class="tsd-kind-icon">IBackoff<wbr>Strategy</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iclusterconfig.html" class="tsd-kind-icon">ICluster<wbr>Config</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/iconfigelement.html" class="tsd-kind-icon">IConfig<wbr>Element</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/iconfigsection.html" class="tsd-kind-icon">IConfig<wbr>Section</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/iconfigsections.html" class="tsd-kind-icon">IConfig<wbr>Sections</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iexponentialoptions.html" class="tsd-kind-icon">IExponential<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ihostconfig.html" class="tsd-kind-icon">IHost<wbr>Config</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ilink.html" class="tsd-kind-icon">ILink</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ilisttasksoptions.html" class="tsd-kind-icon">IList<wbr>Tasks<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ilisttemplatesoptions.html" class="tsd-kind-icon">IList<wbr>Templates<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ipingstats.html" class="tsd-kind-icon">IPing<wbr>Stats</a></li>
@@ -118,6 +122,7 @@
 								<li class="tsd-kind-function tsd-is-private"><a href="globals.html#assertnoerrors" class="tsd-kind-icon">assert<wbr>NoErrors</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#cameltodash" class="tsd-kind-icon">camel<wbr>ToDash</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#dashtocamel" class="tsd-kind-icon">dash<wbr>ToCamel</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#formatattrname" class="tsd-kind-icon">format<wbr>Attr<wbr>Name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -141,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/a5f172f/src/lib/results.ts#L65">lib/results.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/results.ts#L65">lib/results.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -168,19 +173,22 @@
 					<a name="cameltodash" class="tsd-anchor"></a>
 					<h3>camel<wbr>ToDash</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">camel<wbr>ToDash<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">camel<wbr>ToDash<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, parse<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/a5f172f/src/lib/grammar/escape.ts#L28">lib/grammar/escape.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/grammar/escape.ts#L28">lib/grammar/escape.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> parse: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -197,7 +205,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/a5f172f/src/lib/grammar/escape.ts#L20">lib/grammar/escape.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/grammar/escape.ts#L20">lib/grammar/escape.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="formatattrname" class="tsd-anchor"></a>
+					<h3>format<wbr>Attr<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">format<wbr>Attr<wbr>Name<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/grammar/escape.ts#L44">lib/grammar/escape.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -219,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">escape<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/a5f172f/src/lib/grammar/escape.ts#L13">lib/grammar/escape.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/grammar/escape.ts#L13">lib/grammar/escape.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -251,7 +282,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/a5f172f/src/lib/grammar/escape.ts#L17">lib/grammar/escape.ts:17</a></li>
+										<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/grammar/escape.ts#L17">lib/grammar/escape.ts:17</a></li>
 									</ul>
 								</aside>
 								<div class="tsd-comment tsd-typography">
@@ -322,10 +353,22 @@
 						<a href="interfaces/iclusterconfig.html" class="tsd-kind-icon">ICluster<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/iconfigelement.html" class="tsd-kind-icon">IConfig<wbr>Element</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iconfigsection.html" class="tsd-kind-icon">IConfig<wbr>Section</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iconfigsections.html" class="tsd-kind-icon">IConfig<wbr>Sections</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/iexponentialoptions.html" class="tsd-kind-icon">IExponential<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/ihostconfig.html" class="tsd-kind-icon">IHost<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ilink.html" class="tsd-kind-icon">ILink</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/ilisttasksoptions.html" class="tsd-kind-icon">IList<wbr>Tasks<wbr>Options</a>
@@ -386,6 +429,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#dashtocamel" class="tsd-kind-icon">dash<wbr>ToCamel</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#formatattrname" class="tsd-kind-icon">format<wbr>Attr<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#escape" class="tsd-kind-icon">escape</a>

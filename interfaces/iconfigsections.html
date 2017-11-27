@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ConfigUpdateAction | node-kapacitor</title>
+	<title>IConfigSections | node-kapacitor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="configupdateaction.html">ConfigUpdateAction</a>
+					<a href="iconfigsections.html">IConfigSections</a>
 				</li>
 			</ul>
-			<h1>Interface ConfigUpdateAction</h1>
+			<h1>Interface IConfigSections</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ConfigUpdateAction</span>
+						<span class="target">IConfigSections</span>
 					</li>
 				</ul>
 			</section>
@@ -79,10 +79,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configupdateaction.html#add" class="tsd-kind-icon">add</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configupdateaction.html#delete" class="tsd-kind-icon">delete</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configupdateaction.html#remove" class="tsd-kind-icon">remove</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configupdateaction.html#set" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iconfigsections.html#link" class="tsd-kind-icon">link</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iconfigsections.html#sections" class="tsd-kind-icon">sections</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,80 +89,31 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="add" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> add</h3>
-					<div class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<a name="link" class="tsd-anchor"></a>
+					<h3>link</h3>
+					<div class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">:</span> <a href="ilink.html" class="tsd-signature-type">ILink</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/kapacitor.ts#L35">lib/kapacitor.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/grammar/ds.ts#L496">lib/grammar/ds.ts:496</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Add a new element to a list configuration section.</p>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>Attr: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="delete" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> delete</h3>
-					<div class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/kapacitor.ts#L31">lib/kapacitor.ts:31</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Delete the value from the configuration overrides.</p>
+							<p>a link object with an href of the resource.Clients should not need to
+								perform path manipulation in most cases and can use the links provided
+							from previous calls.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="remove" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> remove</h3>
-					<div class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="sections" class="tsd-anchor"></a>
+					<h3>sections</h3>
+					<div class="tsd-signature tsd-kind-icon">sections<span class="tsd-signature-symbol">:</span> <a href="iconfigsection.html" class="tsd-signature-type">IConfigSection</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/kapacitor.ts#L41">lib/kapacitor.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/grammar/ds.ts#L497">lib/grammar/ds.ts:497</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Remove a previously added element from a list configuration section.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="set" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> set</h3>
-					<div class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-kapacitor/node-kapacitor/blob/3c84d39/src/lib/kapacitor.ts#L25">lib/kapacitor.ts:25</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Set the value in the configuration overrides.</p>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>Attr: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
-							</li>
-						</ul>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -181,19 +130,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="configupdateaction.html" class="tsd-kind-icon">Config<wbr>Update<wbr>Action</a>
+						<a href="iconfigsections.html" class="tsd-kind-icon">IConfig<wbr>Sections</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configupdateaction.html#add" class="tsd-kind-icon">add</a>
+								<a href="iconfigsections.html#link" class="tsd-kind-icon">link</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configupdateaction.html#delete" class="tsd-kind-icon">delete</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configupdateaction.html#remove" class="tsd-kind-icon">remove</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configupdateaction.html#set" class="tsd-kind-icon">set</a>
+								<a href="iconfigsections.html#sections" class="tsd-kind-icon">sections</a>
 							</li>
 						</ul>
 					</li>
